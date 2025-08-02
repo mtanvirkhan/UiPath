@@ -1,0 +1,103 @@
+{
+  "name": "MyFirstRobot",
+  "projectId": "3e270d1c-dd1c-4acb-a959-ffc95c64e97a",
+  "description": "Open notepad and type text into it",
+  "main": "Main.xaml",
+  "dependencies": {
+    "AccelerateRPA.FixerIO.Activities": "[1.0.1]",
+    "AccelerateRPA.PushBullet.Activities": "[1.0.4]",
+    "AccelerateRPA.TextMagic.Activities": "[1.0.0]",
+    "Accesa.ImageConverter.Activities": "[2.0.0]",
+    "Accesa.ImageResizer.Activities": "[1.0.0]",
+    "Accusoft.Ocr.Activities": "[1.0.7144.19918]",
+    "ACPHoldingDigital.AdvancedStringManipulation.Activities": "[1.0.1]",
+    "ActiveDirectory.Tasks.Activities": "[1.0.0]",
+    "Activities.UiPathTeam.SendSlackMessage": "[1.3.1]",
+    "ActivitiesClearFolder": "[1.0.7]",
+    "ActivitiesIsDownloadFinished": "[1.0.4]",
+    "ActivitiesLogitRegression": "[2.0.2]",
+    "ActivitiesNumberToWordsCurrency": "[1.0.2]",
+    "ActivitiesSqlToString": "[1.0.3]",
+    "Acumatica.CloudERP.Activities": "[20.1.2]",
+    "AddExcelBorderAndAutofit.Activities": "[0.1.0]",
+    "AddIdDisplayName.Activities": "[1.0.1]",
+    "AddPageNumbersToPDF.Activities": "[1.0.0]",
+    "Adrosonic.CopyorMoveFiles.Activities": "[1.0.1]",
+    "Adrosonic.EmailConverter.Activities": "[1.0.0]",
+    "Adrosonic.EmailFileReader.Activities": "[1.0.5]",
+    "Adrosonic.MailAttachments.Activities": "[1.0.2]",
+    "ADROSONIC.TextComparisonTool.Activities": "[1.0.3]",
+    "AESEncryptionDecryption.Activities": "[1.0.0]",
+    "AgilifyAutomation.ExchangeBasicFunctions.Activities": "[1.2.7]",
+    "Altoros.GoogleAdWordsSearchCampaignBot.Activities": "[1.0.3]",
+    "AndroidActivities": "[1.0.2]",
+    "ApacheOpenNLP.Activities": "[1.0.0]",
+    "AppZen.UiPathConnector.Activities": "[1.0.0]",
+    "ATCS.ExtractHyperlinksInfoFromPPT.Activities": "[1.0.0]",
+    "AtoS.CreateTableQueryFromDataTable.Activities": "[1.0.0]",
+    "ATOS.Delete_SystemTempFiles.Activities": "[1.0.0]",
+    "AtoS.Excel_to_Html.Activities": "[1.0.0]",
+    "Atos.GetDriveInfo.Activities": "[1.0.0]",
+    "ATOS.Map_Network_Drive.Activities": "[1.0.0]",
+    "AtoS.MultiPartImagetoPDFConverter.Activities": "[1.0.0]",
+    "ATOS.Ping_Activity.Activities": "[1.0.0]",
+    "ATOS.Secure_File.Activities": "[1.0.0]",
+    "ATOS.String_Permutation.Activities": "[0.1.0]",
+    "ATOS.UnMap_Network_Drive.Activities": "[1.0.0]",
+    "AudioLog.Activities": "[1.0.1]",
+    "UiPath.Excel.Activities": "[2.11.4]",
+    "UiPath.Mail.Activities": "[1.12.2]",
+    "UiPath.System.Activities": "[21.10.2]",
+    "UiPath.UIAutomation.Activities": "[21.10.3]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "21.10.3.0",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [],
+    "modernBehavior": true,
+    "saveToCloud": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "7b14a0d3-1581-4fcf-a076-862831708fa2",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Legacy"
+}
