@@ -1,0 +1,81 @@
+---------------------------------------------Triggering BOT from Orchestrator------------------
+---------------------------------------------Collaboration and connection between Orchestrator and machine process------------------
+##Sing in UiPath Assistant with link##
+Step 1: Go to UiPath assistant
+Step 2: Click on Preferences in UiPath Assistant
+Step 3: Click on Orchestrator Settings in Preferences
+Step 4: Click on Sign in button and sign out 
+Step 5: Open UiPath orchestrator and sign in
+Step 6: Click on 'orchestrator' button in left menu bar
+Step 7: Copy the link "https://cloud.uipath.com/bjitlbxanqwl/DefaultTenant/orchestrator_/"
+Step 8: Click on Preferences in UiPath Assistant
+Step 9: Click on Orchestrator Settings in Preferences
+Step 10: Select drop down item Service URL from Connection Type
+Step 11: Paste link "https://cloud.uipath.com/bjitlbxanqwl/DefaultTenant/orchestrator_/" in Service URL and click on Sign in button
+
+##Creating UNATTENDED Robot and configuring license##
+Step 1: Go to Cloud Orchestrator
+Step 2: Click on Tenant
+Step 3: Click on Folders
+Step 4: Click on New Folders and give the folder name
+Step 5: Click on newly created folder MyRobot
+Step 6: Click on 'Accounts & Groups' tab
+Step 7: Click on 3 dots and 'Edit role in this folder' option
+Step 8: Select 'Automation User' for 'The Roles for the account selected above'
+Step 9: Click on Assign button
+Step 10: Check the user is assigned for 'Automation User'
+Step 11: Click on 3 dots and 'Edit Tenant role & robot (optional)' option
+Step 12: Allow 'Allow to be Folder Administrator', 'Allow to be Automation User' for Roles
+Step 13: Click Next button
+Allows user to:
+Run automation on their local machine via UiPath Assistant
+Run background personal remote automations in folders where the user has the necessary permissions and in their Personal workspace
+Run and Debug in UiPath Studio desktop and web
+Manage automations in their personal workspace
+Step 14: Insert 'user\mtanv' info in 'Domain\Username*' text field
+Open CMD
+>whoami
+user\mtanv
+Step 15: Insert '0099330027' (PC/Machine password) in the Password field
+Step 16: Click Next button
+Step 17: Click Update button
+UNATTENDED license is Done for this user
+Step 18: Click on 'Machine' tab
+Step 19: Click on 'Manage Machines in Folder'
+Step 20: Checkbox to mtanvirkhan@live.com's workspace machine
+Stpe 21: Click on Update button
+Step 22: Click on Machines
+Step 23: Click on 3 dots button for mtanvirkhan@live.com in 'Edit Machine'
+Step 24: Set 1 for 'Production (Unattended)*' and 1 for 'Testing*'
+Step 25: Click on Update button and check the toast message
+LICENSING is Done
+
+Step 30: Open UiPath Studio with one project
+Step 31: Check below part of the studion with green icon of users information and Select 'MyRobot' option
+Step 32: Click on 'Publish' and submit button
+Step 26: Click on 'MyRobots' folder outside of Tenant
+Step 27: Click on Automation tab
+Step 28: Click on Process tab
+Step 33: Select 'Package Source Name*'
+Step 33: Select 'Package Version*'
+Step 34: Select Main.xmal file for 'Entry point' 
+Step 35: Select Next button
+Step 36: Give 'Display Name' -> MyRobot_Checking
+Step 37: Give Description information
+Step 38: Set 'Job priority*' to High
+Step 39: Click on Create button and check the below message
+Success! Your process was added in this folder.
+You can start the process now or schedule it to run later by configuring a trigger.
+Step 40: Click on Close button
+Step 41: Check MyRobot_Checking process is added under MyRobots folder
+Step 42: Click on Play button
+Step 42: Select 'Production (Unattended)' from 'Runtime tpe*' drop-down item
+Step 43 (Additional): Select drop down item for 'Áccount' -> M. Tanvir Khan (user\mtanv)
+Step 44 (Additional: Select drop down item for 'Machine' -> mtanvirkhan@live.com's workspace machine
+Step 45 (Additional: Select drop down item for 'host' -> USER - USER\MTANV
+Step 46: Click Start button
+Step 42: Refresh UiPath Assistant and check MyRobot_Checking process is appeared
+Step 43: Click on the process, check the details and click on Run
+
+
+
