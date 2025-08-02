@@ -1,0 +1,154 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="testing" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1204,2021" sap2010:WorkflowViewState.IdRef="testing_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:si="clr-namespace:System.IO;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="670,1956" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ForEachFileX Folder="{x:Null}" DisplayName="For Each File in Folder" sap:VirtualizedContainerService.HintSize="608,361" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
+      <ui:ForEachFileX.Body>
+        <ActivityAction x:TypeArguments="si:FileInfo, x:Int32">
+          <ActivityAction.Argument1>
+            <DelegateInArgument x:TypeArguments="si:FileInfo" Name="CurrentFile" />
+          </ActivityAction.Argument1>
+          <ActivityAction.Argument2>
+            <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+          </ActivityAction.Argument2>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,103" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachFileX.Body>
+    </ui:ForEachFileX>
+    <Sequence sap:VirtualizedContainerService.HintSize="608,1444" sap2010:WorkflowViewState.IdRef="Sequence_7">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Use Application: vos3000 V2.1.6.00" sap:VirtualizedContainerService.HintSize="546,1333" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="{x:Null}" IsIncognito="{x:Null}" OpenMode="{x:Null}" OutUiElement="{x:Null}" ScopeGuid="5678d1b2-6827-44f2-a2b1-90da808d4b86" Timeout="{x:Null}" UserDataFolderMode="{x:Null}" UserDataFolderPath="{x:Null}" Version="V1" WebDriverMode="{x:Null}">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,1043" sap2010:WorkflowViewState.IdRef="Sequence_6">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Sequence DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="450,140" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <Delay DisplayName=" Delay 10 seconds" Duration="00:00:10" sap:VirtualizedContainerService.HintSize="388,25" sap2010:WorkflowViewState.IdRef="Delay_1" />
+              </Sequence>
+              <uix:NClick ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickType="Single" ContinueOnError="{x:Null}" CursorMotionType="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Click 'Login'" sap:VirtualizedContainerService.HintSize="450,157" sap2010:WorkflowViewState.IdRef="NClick_1" InScope="{x:Null}" InUiElement="{x:Null}" KeyModifiers="None" MouseButton="Left" OutUiElement="{x:Null}" ScopeIdentifier="5678d1b2-6827-44f2-a2b1-90da808d4b86" Timeout="{x:Null}" Version="V1">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="96, 189, 61, 19" ElementType="Button" FriendlyName="'Login'" FullSelectorArgument="&lt;java name='Login' role='push button' /&gt;" FuzzySelectorArgument="&lt;java name='Login' role='push button' check:text='Login' /&gt;" Guid="2690f1e2-df5e-424a-b669-378f8ee808a2" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEEAAAAXCAYAAABUICKvAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJnSURBVFhH7ZhPTxpBGMb7DXrppd+qFy+9eGnStGlNiNE0Xuyll36TJo21JUJYWopukPJHUdQSFEEBxSohXrx4ed1nknczjDNbZsFqNj38kpnneSHzPNnZEB5dXl2TTPfPQKDqYT1VH3VuXE/Vg+b+l+BpfgmN41OafvGank09jzyvZmZF3lslzMy+o/mFRUo6GSpVdqhS3YskxXKV3n/4KIrwS+BHBA25+TJ1Ts+p27ugk7O+xyByIF++uCnyIrtfAoBY2qpS2xvq9S8jC/IhJ5eAB8C/DhCLm1VqdXrU6fUjC/IhJ/Jy9qESChtb1DjqUrNzZs3jJ0+1+jjcxXciH3LeKoGvQ75Uofphm/ZbJ9bgwDr9oYF8yIm8/nWQ3wnr3gujdnBMtUbbGpSg0xn4jMnjtayra3k2FF4+5OQSwNCTkCts0O96k3brR9bgYDodqJ68V9dhPBuQDzmRl7MPlZD66VJ2vUTf3YI1OJROB6on70f1guZsQD7kNJbw6UucEulsKHAonQ5UT96P6gXN2YKcxhI+f12hVGYtFDiUTgeqJ+9H9YLmbEFOYwlL8SSls7lQ4FA6HaievFfXQR6vdXsbkNNYwnIiRRk3HwoOoKLz5c/JHq9lXbfW7W1ATmMJ8WSaVnOFewXhdPokQU7kRW5RAi8grjg/yP1V/qcgtIxuZtIgJ5eAh0A8CQDit4QjfkhEHeREXs7ul4D/E2JzC95AmhzvDRpVEk5m6P8EUQJfh+3aAb2JzYuGos7LtzGR178OvABcCO9V3eQzdzVn2pt02zn/OqiGqv/Nk5nEnMlT9fHnBnQDVfsOn5Ztj4gAAAAASUVORK5CYII=" InformativeScreenshot="76dd55ff455343ad293cc4dfe7c3a7e2.png" ScopeSelectorArgument="&lt;wnd app='vos3000client.exe' cls='SunAwtFrame' title='vos3000 V2.1.6.00' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickType="Single" ContinueOnError="{x:Null}" CursorMotionType="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Click 'Data query'" sap:VirtualizedContainerService.HintSize="450,157" sap2010:WorkflowViewState.IdRef="NClick_2" InScope="{x:Null}" InUiElement="{x:Null}" KeyModifiers="None" MouseButton="Left" OutUiElement="{x:Null}" ScopeIdentifier="5678d1b2-6827-44f2-a2b1-90da808d4b86" Timeout="{x:Null}" Version="V1">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="29, 205, 82, 16" ElementType="Text" FriendlyName="'Data query'" FullSelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Navigation' role='page tab' /&gt;&lt;java cls='JTree' role='tree' /&gt;&lt;java name='vos3000 Voip operation platform' role='label' /&gt;&lt;java name='Data query' role='label' /&gt;" FuzzySelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Navigation' role='page tab' /&gt;&lt;java cls='JTree' role='tree' /&gt;&lt;java name='vos3000 Voip operation platform' role='label' /&gt;&lt;java name='Data query' role='label' check:text='Data query' /&gt;" Guid="eafee153-f72f-4ef4-9e17-e627e864ce0d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFYAAAAUCAYAAAAXxsqQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAP+SURBVFhH7ZjLTxRBEMb3//JmIkZFNILiiigEUREVAV+8fSUqoEIWEURgdxaBKPGt2d3oRU8ePXowkiiJRiS+iAmXsqvXGmqK7tmZFY0HDr8wVfVVdfPR0xs28mV+AYj3H+c0PCdrjW1F0HahEDq6KmH227xVJ/N+tXx6JMuhs9Xy6QltbF3zBqg6sgrmvv/01YWp5dMjWQ6drZZPT2hjTTVOPjPy6ZEsh85Wy6fHNdavGclVJ8LOCau3sVw6WQ+rJyJUQMYfHYP4g3KIP1xkVJG4Vwtv3k3D9MyMy6evXzRzP7JXAp/DkQuatEE0xN/WmbRBNATVPVfBwMROGMm0KFo9jGZOgPN4FyQf73aZyFTC7WeH4NXrF27/Cot4jB2crNDGJtL7wUnt1T8T6RqVa9L5kUzzbzBugvjTdkjer/cM5EQikSWYdDbC6v8n3KsAg4Hx3dowNNVJVUMyVQnOkzJNMqVOqqbcBU/ywMQudxh/JRCTMZiTOqkhuNZUJ/gsP+2/1HmMvToWVWYdV6ZWauPiD3dAPH2YnVTvicVrov9mmWcRGozPJmNlnmKC8jxHc3mO91OdYq6hn5SXOooR6rPpeA3zvEYx9XmM7XOi2qzsa080K7OPqSvhgGIfnL28CVrPF+rTi/mYs2PJUHe4WpTnSUeb4RrS2Wo8L2u2PD4HmSH7KOY6iv10nnxsuAYQDGJxNBaNbFQn9Yg+rYl0rb5r8WpwUlVwqqsIOvuL4eSZdVoXi/+ZsTyPz7wmfwmOrSbzPOazec3WZ9LxmGsQTz8PekfQWPWhlK5THNSn9HR3kTaz/eJGdVI3wPnYFhiaisK5ns3Q0FYAvcNRz0CO3BDp5IYw5vA8ny11vObXQzE+m7T0LDHpeMw1CK2jNTzouZE1NqFNrQFHvfodnRth+G4UbtyJakORnpGtcG2yVBtee3y16v/szuDIDdFapk2TzlbjeVnzyweZYeqz6Xgs5/F+7x07ugfGnrVAMkOvfrU+pWjqleGtcGmoBLoHS/RV0DVQDH1j23S95iiam3tD+Cw3Qxqq8bqs8TyvUd7UI2PTDNlHMddSHpGzeN7t58Hzl/dg6kk39AxVQFd/qabp3Hq4fns7DN7ark9p/3ipNhdNxRNb31IIb2c+eBYmcHGJn46eZd7drNDxvXP8dKaa7KM6z3MdPksN5d11eGDihPqQamxfqwwsgLqmNfqExpxt0K6uiLYL5TD7NfvVoZxjmxtUR4Sty5gMyKWz5W06k9k8do2VBULWG1rRUPP3sVLLa5wgOqkhgmh5jZ8sPx0nl07+sUw6z7+0Qcj1fewKWUIbu0Iwct6xCD/uftqgOiSMJpc2qA4Jo8mltesW4Bc5q0XkquJHfAAAAABJRU5ErkJggg==" InformativeScreenshot="7ad81b2da725f92ad0ed872805ce7606.png" ScopeSelectorArgument="&lt;wnd app='vos3000client.exe' cls='SunAwtFrame' title='vos3000  admin@148.72.174.68' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickType="Single" ContinueOnError="{x:Null}" CursorMotionType="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Click 'Clearing query'" sap:VirtualizedContainerService.HintSize="450,157" sap2010:WorkflowViewState.IdRef="NClick_3" InScope="{x:Null}" InUiElement="{x:Null}" KeyModifiers="None" MouseButton="Left" OutUiElement="{x:Null}" ScopeIdentifier="5678d1b2-6827-44f2-a2b1-90da808d4b86" Timeout="{x:Null}" Version="V1">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="49, 285, 103, 16" ElementType="Text" FriendlyName="'Clearing query'" FullSelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Navigation' role='page tab' /&gt;&lt;java cls='JTree' role='tree' /&gt;&lt;java name='vos3000 Voip operation platform' role='label' /&gt;&lt;java name='Data query' role='label' /&gt;&lt;java name='Clearing query' role='label' /&gt;" FuzzySelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Navigation' role='page tab' /&gt;&lt;java cls='JTree' role='tree' /&gt;&lt;java name='vos3000 Voip operation platform' role='label' /&gt;&lt;java name='Data query' role='label' /&gt;&lt;java name='Clearing query' role='label' check:text='Clearing query' /&gt;" Guid="2cdccb92-7dc1-4936-9e55-e954e2cddc29" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGsAAAAUCAYAAACKy8MYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARoSURBVGhD7ZnbT1NBEMb7f/lmIkYFNKJAQUAkXvCGgjeQ4jURARWtIoqUcoqIl2jES1rUJ/8CH33SGIkaDEEjMfIy7qxMM2fYPe3ZGumDD1/Y/b7fzDnpuGuTRubmFwD18cusFu1tfmtnGcS6S+FEbyN8/T6/hJO8lMxtPPm2nFQoF4lE8uKkgjjeU+Ymnvu2HJUdFkqCpsKWjnXQdGAFfPg04/NJpppcmUuNVDFytsylBhV6WEG+a+ZSI1WMnC1zqUH9H5ZFf4OzZS41KN+wxibbYGSyDpJP/mhkUanJvfB5dgZmvs1pvZ+e1sL17I+fvoYuL+JSI1WMnC1zqUH5hnV9fAskpo4rdfo0MnUUvGf1kHrWoOU9bYDxzFa4/2ofvHn72tfQ5UVcaqSKkbNlLjUo37AGJxr0sEYzu8BL79B/RzPNymvXfmKqY1G4b4fkyy5IPT7oa2h6GH47IpmyoBcMyrg4x7+NSbn0C1IQZ8tcalDZYSEwOF6vh4CD8tLbIZVuBO95rVYqrU6VlroWF4UnbvBOva+hfJj84OTATAPkkv1sKlZO5mF5rgiFqGtjUTWAI2pQjXoYySc1kMzsZyfKf7Lwihy4Xasb8T4k279wGpCJwT2J9yKWRDz58i/vx/tSLxL5xMicZONkDTEkquMc+TyXPTib7cU3V72oHsCfK4/UoQZ4WF2Hu5V2wpmL66HzXKk+ZejHvRpfQy56oSBxRvJhMhubK+NrvucK4mRNmIz2QZzPjw83Awo38SQOC4fTpk7UAX2qRjN79P9deC166SY42VsOPQMVcOz0Gs3Fk/9mWFL51rlmQX6+PVwy6XP5rsHLCRyW+uKQaVHaq0/Tqb5yPaCu82XqRK2Dc/GNMPQgCmf7N0BrrAQuD0ezzXgvVNCDTQyupWQ/Ll4nOZ7RmjITx1nKc3G0RsaWSRGLa+JoT8+i5/JcM7TA8NJQtR7WqB5UM3jq2jvRUwbDj6Jw62FUDwnVn9gM1yeq9BD3HFmp6n8teQCu5Qtxn3jO8DXlPJN74mSdqSf1s9URSxx5uTha88zEkcfryOMs+bJOM3xzJbENUq86IDVF1952fZpwUJeGN8OFoU3Qd2OTvgZ7Byvg6lilzpsPrVzSGGV7KcpknivjvtwTx1lZR3sbx/dcJi5sRnv8ix7ncC897tPeN6wXr+/CxONu6B/aCr0DVdBzrRLaz66Fm/er4ca9an2aBsar9MBwUHiyDh4vhXfTn31NSfwlSKaM15hYmdE6qAf6kqM9cVRLHq/jMnFhM5PP99LjPu19w5Ihro+qLxJtXavVUEqgpX2VPklxrxK61PUY666Dr9/ml9TxepPvmkn/b3P4YeXL2TIuWyZ92hc8LL5HtcXK9e9ZsfMN2d+zTFyQ75pJv1AOPxwuGyd9/qHaaoIy6eOa9+Q+50IPy/R7lokL8l0z6S8XV2gm/Xy50MMy+flyhWbSXy6u0Ez6+XLZYeVbUChHCpvb+OXiSGFzG5+bW4DfSJYCYP2bd38AAAAASUVORK5CYII=" InformativeScreenshot="1b7367ce425df20ca95f98fff6bc7b14.png" ScopeSelectorArgument="&lt;wnd app='vos3000client.exe' cls='SunAwtFrame' title='vos3000  admin@148.72.174.68' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickType="Double" ContinueOnError="{x:Null}" CursorMotionType="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Click 'Account clearing balance'" sap:VirtualizedContainerService.HintSize="450,157" sap2010:WorkflowViewState.IdRef="NClick_4" InScope="{x:Null}" InUiElement="{x:Null}" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" OutUiElement="{x:Null}" ScopeIdentifier="5678d1b2-6827-44f2-a2b1-90da808d4b86" Timeout="{x:Null}" Version="V1">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="69, 333, 160, 16" ElementType="Text" FriendlyName="'Account clearing balance'" FullSelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Navigation' role='page tab' /&gt;&lt;java cls='JTree' role='tree' /&gt;&lt;java name='vos3000 Voip operation platform' role='label' /&gt;&lt;java name='Data query' role='label' /&gt;&lt;java name='Clearing query' role='label' /&gt;&lt;java name='Account clearing balance' role='label' /&gt;" FuzzySelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Navigation' role='page tab' /&gt;&lt;java cls='JTree' role='tree' /&gt;&lt;java name='vos3000 Voip operation platform' role='label' /&gt;&lt;java name='Data query' role='label' /&gt;&lt;java name='Clearing query' role='label' /&gt;&lt;java name='Account clearing balance' role='label' check:text='Account clearing balance' /&gt;" Guid="ca68a0f8-c564-4fee-957b-72b14ddb203f" ImageBase64="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" InformativeScreenshot="2f49dcc0512757dcb1c5bb77b0a07e8b.png" ScopeSelectorArgument="&lt;wnd app='vos3000client.exe' cls='SunAwtFrame' title='vos3000  admin@148.72.174.68' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+                </uix:NClick.Target>
+              </uix:NClick>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="518, 239, 330, 250" FilePath="C:\Program Files (x86)\VOS30002160\V2.1.6.0\bin\vos3000client.exe" IconBase64="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" InformativeScreenshot="d7ea478313fb3f5e1cbe657118c8218e.png" Selector="&lt;wnd app='vos3000client.exe' cls='SunAwtFrame' title='vos3000 V2.1.6.00'/&gt;" Title="vos3000 V2.1.6.00" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>
