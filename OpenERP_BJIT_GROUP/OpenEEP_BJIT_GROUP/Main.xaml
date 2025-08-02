@@ -1,0 +1,99 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1186,641" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="476,557" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: BJIT Ltd." sap:VirtualizedContainerService.HintSize="434,465" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="b3a7b0a1-3355-4e6c-b91d-0dfa771f63f1" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,249" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Log in'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b3a7b0a1-3355-4e6c-b91d-0dfa771f63f1" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://erp.bjitgroup.com/web/login#view_type=list&amp;model=hr.insurance&amp;menu_id=703" DesignTimeRectangle="656, 558, 70, 34" ElementType="Button" FriendlyName="'Log in'" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' aaname='Log in' check:text='Log in' /&gt;" Guid="27e7d106-ef0c-4eda-a849-cea27bf02159" ImageBase64="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" InformativeScreenshot="83e5a239a902b360b8f387b9b3477dbe.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='BJIT Ltd.' /&gt;" SearchSteps="FuzzySelector, Image" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="94769c5dd8fbb2d4b704f72d51c8cb5c.png" Selector="&lt;html app='chrome.exe' title='BJIT Ltd.'/&gt;" Url="https://erp.bjitgroup.com/web" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
