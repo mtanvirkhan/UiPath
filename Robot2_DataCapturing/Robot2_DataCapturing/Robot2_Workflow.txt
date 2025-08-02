@@ -1,0 +1,11 @@
+Step 1: Collect all the excel data (activity: Read Range Workbook) and save in the data table (variable: CustomerData, Data Table)
+Step 2: Open target Browser (activity: Use Application/Browser)
+Step 2.1: Using for loop (activity: For Each Row in Data Table) for accessing row data (variable: CurrentRow, Int32) of CustomerData (Data Table veriable) till the end of the row record
+Step 2.2: Using inserting data module (activity: Type Into) by using variable CurrentRow("Column)Header").ToStrings
+Step 2.2.1: Using if-else (activity: Else If) for selecting radio button data by clicking info (activity: Click)
+Step 2.2.1: This activities can be done also by Type Into activity
+Step 2.2.2: Using if-else (activity: Else If) for selecting radio button data by clicking info (activity: Click)
+Step 2.2.2: This activities can be done also by Type Into activity
+Step 2.3: Using adding method by clicking (activity: Click) for each fill up form
+Step 3: Using deleting method by clicking (activity: Click) for all the inserted records
+Step 4: Using deleting method by clicking (activity: Click) confirmation button
