@@ -1,0 +1,31 @@
+﻿{
+  "Version": "1.0",
+  "Metadata": [
+    {
+      "ApplicationType": "WindowsApplication",
+      "ExecutablePath": {
+        "Value": "acrobat.exe",
+        "IsExpression": false
+      },
+      "Url": null,
+      "Arguments": {
+        "Value": "CurrentFile.FullName",
+        "IsExpression": true
+      },
+      "Version": null
+    },
+    {
+      "ApplicationType": "WindowsApplication",
+      "ExecutablePath": {
+        "Value": "excel.exe",
+        "IsExpression": false
+      },
+      "Url": null,
+      "Arguments": {
+        "Value": "G:\\My Drive\\EDU STUFF\\UDEMY - UiPath\\Robot5_PDFDataScraping\\Robot5_PDFDataScraping\\ScrapDataFile.xlsx",
+        "IsExpression": false
+      },
+      "Version": null
+    }
+  ]
+}
