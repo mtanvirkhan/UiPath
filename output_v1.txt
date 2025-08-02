@@ -1,0 +1,7 @@
+11/03/2023 12:52:19 => [Debug] Debug started for file: OutputPanel
+11/03/2023 12:52:27 => [Info] Learning_Activities_Panel execution started
+11/03/2023 12:52:27 => [Debug] This is used to log message for debugging
+11/03/2023 12:52:27 => [Info] This is used for production info
+11/03/2023 12:52:27 => [Debug] This is used for production fatal
+11/03/2023 12:52:27 => [Debug] This is used for production trace
+11/03/2023 12:52:27 => [Info] Learning_Activities_Panel execution ended in: 00:00:00
